@@ -1,4 +1,4 @@
-import { Client } from 'discord.js';
+import { Client, ActivityType } from 'discord.js';
 import { config } from './config';
 import { commands } from './commands';
 import { deployCommands } from './bin/deploy-commands';
@@ -16,6 +16,13 @@ const client = new Client({
 
 client.once("ready", ()=>{
 	console.log(`${client.user.tag} Is Ready !`);
+	client.user.setPresence({
+		activities: [{
+			name: 'Komunitas',
+			type: ActivityType.Watching
+		}],
+		status: 'idle'
+	})
 });
 
 client.on("guildCreate", async (guild) => {
