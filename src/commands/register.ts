@@ -1,5 +1,5 @@
 import { commandInteraction, SlashCommandBuilder, EmbedBuilder } from 'discord.js';
-import connection from '../database'
+import connection from '../bin/database'
 
 export const data = new SlashCommandBuilder()
 	.setName("register")

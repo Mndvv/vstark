@@ -1,8 +1,8 @@
 import { Client } from 'discord.js';
 import { config } from './config';
 import { commands } from './commands';
-import { deployCommands } from './deploy-commands';
-import dbConnection from './database';
+import { deployCommands } from './bin/deploy-commands';
+import dbConnection from './bin/database';
 
 
 const client = new Client({

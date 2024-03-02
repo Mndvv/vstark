@@ -1,4 +1,4 @@
-import { dbConfig } from './config';
+import { dbConfig } from '../config';
 
 import mysql from 'mysql';
 
